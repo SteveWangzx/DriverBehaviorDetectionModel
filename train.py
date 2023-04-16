@@ -88,7 +88,7 @@ criterion = criterion.to(device)
 optimizer = optim.SGD(resnet.parameters(), lr=0.001, momentum=0.9)
 
 # Train the model
-num_epochs = 5
+num_epochs = 10
 for epoch in range(num_epochs):
     running_loss = 0.0
     for i, data in enumerate(train_loader, 0):
